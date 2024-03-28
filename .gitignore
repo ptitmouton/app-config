@@ -1,0 +1,8 @@
+# Build output
+dist
+
+# node_modules
+node_modules
+
+# Test artifacts
+coverage

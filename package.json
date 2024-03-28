@@ -1,0 +1,41 @@
+{
+    "$schema": "https://json.schemastore.org/package",
+    "name": "app-config",
+    "version": "0.0.1",
+    "type": "module",
+    "description": "Lightweight Type-safe app configuration abstracting away your env vars",
+    "main": "dist/index.js",
+    "exports": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+    },
+    "scripts": {
+        "lint:check": "eslint 'src/**'",
+        "lint:fix": "eslint --fix 'src/**'",
+        "format:check": "prettier --ignore-unknown --check './**/*.*'",
+        "format:fix": "prettier --ignore-unknown --write './**/*.*'",
+        "test": "vitest",
+        "build": "tsc",
+        "prepare": "husky install"
+    },
+    "keywords": ["config", "configuration", "environment", "variables"],
+    "author": "Alexis Rinaldoni <alexis@rinaldoni.net>",
+    "license": "LGPL-3.0-or-later",
+    "devDependencies": {
+        "@types/node": "^20.11.30",
+        "@vitest/coverage-v8": "^1.4.0",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-vitest": "^0.4.0",
+        "husky": "^9.0.11",
+        "lint-staged": "^15.2.2",
+        "prettier": "^3.2.5",
+        "typescript": "^5.4.3",
+        "typescript-eslint": "^7.4.0",
+        "vitest": "^1.4.0"
+    },
+    "lint-staged": {
+        "*.{js,ts}": "eslint --cache --fix",
+        "*.{js,ts,json,md}": "prettier --write"
+    }
+}
