@@ -20,6 +20,10 @@
     },
     "keywords": ["config", "configuration", "environment", "variables"],
     "author": "Alexis Rinaldoni <alexis@rinaldoni.net>",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/ptitmouton/app-config.git"
+    },
     "license": "LGPL-3.0-or-later",
     "devDependencies": {
         "@types/node": "^20.11.30",
