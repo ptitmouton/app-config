@@ -67,7 +67,8 @@ jobs:
         run: npm ci
       - run: npm run build
 
-  publish_to_npm:
+  release:
+    name: Release
     if: startsWith(github.ref, 'refs/tags')
     needs:
       - check
