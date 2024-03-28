@@ -2,6 +2,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/github-workflow.json
 
 name: CI
+
 on:
   push:
     tags:
@@ -72,6 +73,8 @@ jobs:
       - check
       - test
       - build
+    permissions:
+      contents: write
     uses: ./.github/workflows/__publish_to_npm.yaml
     secrets:
       npm-token: ${{ secrets.NPM_TOKEN }}
