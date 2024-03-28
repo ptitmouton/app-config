@@ -1,6 +1,6 @@
 {
     "$schema": "https://json.schemastore.org/package",
-    "name": "app-config",
+    "name": "@ptitmouton/app-config",
     "version": "0.0.1",
     "type": "module",
     "description": "Lightweight Type-safe app configuration abstracting away your env vars",

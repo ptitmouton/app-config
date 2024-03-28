@@ -1,0 +1,17 @@
+# source code
+src
+node_modules
+
+# Development artifacts
+.git
+.github
+.husky
+.workflow
+.gitignore
+tsconfig.json
+*.config.json
+
+# Test artifacts
+coverage
+*.test.ts
+*.test-d.ts
